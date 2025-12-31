@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projeto História de Salinas da Margarida</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,700;1,400&family=Lato:wght@400;700&display=swap');
+        .font-serif { font-family: 'Merriweather', serif; }
+        .font-sans { font-family: 'Lato', sans-serif; }
+    </style>
+</head>
+<body class="bg-stone-100 text-stone-800 font-sans antialiased">
+
+    <header class="bg-stone-900 text-amber-50 py-12 border-b-4 border-amber-600">
+        <div class="container mx-auto px-6 text-center">
+            <h1 class="text-4xl md:text-5xl font-serif font-bold mb-4">História de Salinas da Margarida</h1>
+            <p class="text-xl text-stone-300 max-w-2xl mx-auto">
+                Ferramentas digitais para pesquisa histórica e resgate da memória local.
+                <br>
+                <span class="text-sm mt-2 block opacity-75">Desenvolvido pelo Prof. Sérgio</span>
+            </p>
+        </div>
+    </header>
+
+    <main class="container mx-auto px-6 py-16">
+        
+        <div class="grid md:grid-cols-2 gap-12 items-start">
+            
+            <div class="bg-white p-8 rounded-lg shadow-lg border border-stone-200 hover:shadow-xl transition-shadow">
+                <div class="h-12 w-12 bg-amber-100 text-amber-700 rounded-full flex items-center justify-center mb-6 text-2xl">
+                    🌐
+                </div>
+                <h2 class="text-2xl font-serif font-bold mb-4 text-stone-900">Investigador Web</h2>
+                <p class="text-stone-600 mb-6">
+                    Acesse a ferramenta de pesquisa diretamente pelo seu navegador, sem precisar instalar nada. Ideal para consultas rápidas em sala de aula ou no celular.
+                    <br><br>
+                    <em>Cruza dados do Internet Archive e Google Books.</em>
+                </p>
+                
+                <a href="https://investigador-salinas-bk643vlec5ndiyspqetkxt.streamlit.app/" target="_blank" 
+                   class="block w-full text-center bg-amber-600 hover:bg-amber-700 text-white font-bold py-3 px-6 rounded transition-colors">
+                    Acessar Agora (Online)
+                </a>
+                
+                <div class="mt-6 border border-stone-200 rounded overflow-hidden">
+                    <p class="text-xs text-center text-gray-400 py-1 bg-gray-50">Pré-visualização</p>
+                    <iframe src="https://investigador-salinas-bk643vlec5ndiyspqetkxt.streamlit.app/?embed=true" height="200" class="w-full"></iframe>
+                </div>
+            </div>
+
+            <div class="bg-stone-800 p-8 rounded-lg shadow-lg text-stone-100 border border-stone-700 hover:shadow-xl transition-shadow">
+                <div class="h-12 w-12 bg-stone-700 text-amber-400 rounded-full flex items-center justify-center mb-6 text-2xl">
+                    🐧
+                </div>
+                <h2 class="text-2xl font-serif font-bold mb-4 text-white">Versão Desktop (Linux)</h2>
+                <p class="text-stone-400 mb-6">
+                    Baixe o aplicativo portátil para computadores Linux (Zorin, Ubuntu, Mint). 
+                    <br><br>
+                    <strong>Vantagens:</strong> Funciona offline (para abrir arquivos já baixados), mais rápido e permite conversão automática de mapas JP2.
+                </p>
+
+                <div class="bg-stone-900 p-4 rounded mb-6 text-sm font-mono text-amber-200 border border-stone-700">
+                    ℹ️ Não requer instalação. Basta baixar, dar permissão de execução e clicar.
+                </div>
+
+                <a href="https://drive.google.com/file/d/1uucOKZQbUD_tyusUgJ8wW-bKkt6AlJ1b/view?usp=sharing" download
+                   class="block w-full text-center bg-white hover:bg-stone-200 text-stone-900 font-bold py-3 px-6 rounded transition-colors">
+                    ⬇️ Baixar para Linux
+                </a>
+                <p class="text-xs text-center mt-2 text-stone-500">Tamanho aprox: 15MB • Formato: Executável Linux</p>
+            </div>
+
+        </div>
+
+        <section class="mt-20 border-t border-stone-300 pt-10 text-center md:text-left">
+            <h3 class="text-2xl font-serif font-bold mb-4">Sobre o Contexto Histórico</h3>
+            <p class="text-stone-700 leading-relaxed max-w-3xl">
+                Esta ferramenta foi criada para auxiliar na documentação do livro sobre Salinas da Margarida. 
+                Ela facilita o acesso a documentos raros, como os registros da <strong>Comissão Geral de Investigações (CGI)</strong> 
+                e mapas cartográficos do Recôncavo Baiano, permitindo que a comunidade tenha soberania sobre sua própria história.
+            </p>
+        </section>
+
+    </main>
+
+    <footer class="bg-stone-200 py-6 text-center text-stone-600 text-sm">
+        <p>&copy; 2025 Projeto História de Salinas. Código Aberto (Open Source).</p>
+    </footer>
+
+</body>
+</html>
